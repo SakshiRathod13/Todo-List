@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* TodoList component styles */
+  
+  .todo-list {
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .todo-list {
+      margin-top: 10px;
+    }
+  }
+  
+  /* TodoItem component styles */
+  
+  .todo-item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-item:last-child {
+    border-bottom: none;
+  }
+  
+  .todo-item.completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  .todo-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-item button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* TodoForm component styles */
+  
+  .todo-form {
+    margin-top: 20px;
+  }
+  
+  .todo-form input[type="text"],
+  .todo-form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .todo-form button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-form button:hover {
+    background-color: #388e3c;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .todo-form {
+      margin-top: 10px;
+    }
+  
+    .todo-form input[type="text"],
+    .todo-form button {
+      padding: 5px;
+    }
+  }
+  
